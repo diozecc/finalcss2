@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LaFuong Pastry</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/thu-vien-css.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/styleeffec.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<link rel="icon" href="image/icon.png">
+	<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous"
+	/>
+</head>
+<body>
+	<!-- Huỳnh Ngọc Lan Anh -->
+	<header>
+		<div class="container-menu" id="container-menu">
+			<div class="options">
+				<div class="logo-menu">
+					<h2  class="font-serif">Menu</h2>
+				</div>
+
+				<div class="option-menu">
+					<ul>
+						<li><a href="">Về LaFuong</a></li>
+						<li><a href="">Sản phẩm</a></li>
+							<ul>
+								<li><a href="" class="fz-20">Bánh sinh nhật</a></li>
+								<li><a href="" class="fz-20">Bánh nửa Entremet</a></li>
+								<li><a href="" class="fz-20">Phụ kiện</a></li>
+							</ul>
+						<li><a href="">Cách mua hàng</a></li>
+						<li><a href="">Câu hỏi thường gặp</a></li>
+						<li class="mt-10">Hotline: <a href="" class="sdt">090 786 0330</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="close" id="close" onclick="closeMenu()">
+				<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 6L6 18" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M6 6L18 18" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+			</div>
+		</div>
+
+		<div class="top-bar">
+			<div class="menu" onclick="showMenu()">
+				<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="m3 6l18 0" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+					<path d="m3 12l18 0" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+					<path d="m3 18l18 0" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+				</svg>
+				<h3>MENU</h3>
+			</div>
+
+			<div class="logo">
+				<a href=""><svg width="90" height="16" viewBox="0 0 90 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.36839 15.8261H0C0.145226 15.4006 0.204675 14.952 0.175116 14.5048V2.95218C0.20378 2.65532 0.142951 2.35678 0 2.09277H2.46056C2.31598 2.35626 2.25433 2.65507 2.28322 2.95218V14.9388H7.71641L7.36839 15.8261Z" fill="#444"></path>
+					<path d="M9.04172 14.5412L13.5439 3.906C13.8042 3.29507 13.8042 2.60905 13.5439 1.99812L12.6572 0H14.2532L20.3271 14.3951C20.5113 14.9042 20.772 15.3842 21.1007 15.8195H18.1658C18.2008 15.7007 18.2187 15.5778 18.219 15.4543C18.1944 15.0906 18.0925 14.7359 17.9197 14.4122L16.7426 11.6192H11.9767L10.6754 14.6765C10.4936 15.0351 10.3867 15.425 10.3607 15.8238H8.32129C8.62672 15.4339 8.86961 15.0014 9.04172 14.5412ZM14.3619 5.59259L12.4976 10.2849H16.1375L14.3619 5.59259Z" fill="#444"></path>
+					<path d="M25.4745 7.95588H30.768L30.4155 8.8604H25.4745V14.8634C25.4469 15.1969 25.5071 15.5318 25.6496 15.8366H23.189C23.3312 15.5439 23.3916 15.2202 23.3641 14.8977V2.86604C23.3903 2.59356 23.3275 2.32001 23.1846 2.08398H31.8298L31.4773 2.98851H25.4922L25.4745 7.95588Z" fill="#444"></path>
+					<path d="M34.2308 9.69442V3.18012C34.2586 2.81793 34.1986 2.45446 34.0557 2.11875L36.5982 2.10156C36.4492 2.472 36.3834 2.86901 36.4054 3.26606V9.06705C36.4054 12.2619 37.1968 14.7477 39.746 14.7477C42.7541 14.7477 43.2639 12.0535 43.2639 10.8546V3.07484C43.2836 2.73973 43.2166 2.40515 43.0689 2.10156H45.0639C44.9242 2.44306 44.8578 2.8086 44.8688 3.17582V10.889C44.8688 12.8678 43.6563 15.996 39.4356 15.996C36.0241 16.0003 34.2308 14.0366 34.2308 9.69442Z" fill="#444"></path>
+					<path d="M49.1515 14.1044C48.445 13.4313 47.8836 12.6288 47.5 11.7436C47.1164 10.8584 46.9182 9.90805 46.917 8.94791C46.917 4.96886 50.1534 1.92871 54.3209 1.92871C58.4883 1.92871 61.7402 5.02257 61.7402 9.08757C61.7402 13.2385 58.2422 16.0015 54.2677 16.0015C52.3735 16.0332 50.5401 15.3534 49.1515 14.1044ZM59.3018 9.06178C58.8075 5.51458 55.9191 2.73655 52.8733 3.13618C50.0847 3.50142 49.0185 6.28805 49.3886 8.95651C49.8032 11.9172 52.1485 15.256 55.6332 14.8005C58.506 14.4331 59.6809 11.7883 59.3018 9.06178Z" fill="#444"></path>
+					<path d="M63.8372 14.5758V2.9889C63.8645 2.68312 63.8038 2.37601 63.6621 2.10156H66.5638L72.9635 12.6637V3.05765C72.9635 2.79768 72.9635 2.36368 72.7884 2.10156H74.5041C74.329 2.39806 74.329 2.70959 74.329 3.17582V14.4835C74.3007 14.9363 74.3601 15.3903 74.5041 15.822H72.7817L65.2205 3.52173V14.5715C65.1923 14.9955 65.2518 15.4207 65.3956 15.822H63.6732C63.8127 15.4213 63.8684 14.9977 63.8372 14.5758Z" fill="#444"></path>
+					<path d="M78.6268 14.1053C77.2391 12.8033 76.3945 11.0308 76.3945 8.77269C76.3954 7.52251 76.7542 6.29708 77.4308 5.23273C78.1075 4.16838 79.0755 3.30684 80.2272 2.74396C81.2647 2.22402 82.6368 1.92752 84.4656 1.92752C86.0987 1.88566 87.706 2.32872 89.072 3.19729L87.6466 4.23933C86.4695 3.37992 85.4144 3.00608 83.9713 3.00608C80.7016 3.00608 78.9083 5.68098 78.9083 8.04434C78.9083 12.0556 81.5994 15.0442 84.9223 15.0442C87.139 15.0442 87.8417 14.4534 87.8417 14.4534V8.86723H82.5836L82.9361 7.9627H89.5995C89.4567 8.27353 89.3958 8.61387 89.4222 8.95317V14.7907C88.5355 15.5534 86.5227 16.0067 84.4833 16.0067C81.8809 16.0003 80.0455 15.3923 78.6268 14.1053Z" fill="#444"></path>
+				</svg></a>
+			</div>
+
+			<div class="cart">
+				<div class="cart-text">
+					<a href="" class="text-none"><h4>ĐẶT BÁNH</h4></a>
+				</div>
+				<div class="cart-cart">
+					<a href=""><svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="#444" fill="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+						<path d="M3.5 6H20.5" stroke="#444" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path><path d="M16 11C16 12.0609 15.5786 13.0783 14.8284 13.8284C14.0783 14.5786 13.0609 15 12 15C10.9391 15 9.92172 14.5786 9.17157 13.8284C8.42143 13.0783 8 12.0609 8 11" stroke="#444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></path>
+					</svg><h4>GIỎ</h4></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-slide">
+			<marquee behavior="scroll" direction="left" scrollamount="6">
+				<span>GIAO HÀNG TẬN NƠI TẠI HÀ NỘI</span>
+			</marquee>
+		</div>
+	</header>
+	<main>
+		<div class="container-main">
+			<div class="banner">
+				<img src="image/baner.png" alt="">
+			</div>
+			<div class="text-banner vien">
+				<a href="">TẤT CẢ SẢN PHẨM</a>
+			</div>
+		</div>
+		<div class="banner1">
+			<div class="w-50">
+				<div class="w-text">
+					<h5>LAFUONG LÀ</h5>
+					<h1 class="font-serif">Lựa chọn lý tưởng cho <br> bánh ngọt chuẩn Pháp</h1>
+					<p>Dành nhiều tình cảm đặc biệt cho bánh ngọt Pháp, chúng <br> tôi quyết tâm tạo nên thương hiệu LaFuong Pastry để mang <br> tới cho mọi người một trải nghiệm thưởng thức bánh thật <br> tinh tế và tận tâm.</p>
+					<p>Hãy một lần nếm thử bánh của LaFuong để cảm nhận những <br> tình cảm và nỗ lực của chúng tôi, tất cả nằm ở sự hoà quyện <br> của hương vị và kết cấu đặc biệt trong từng chiếc bánh.</p>
+					<button class="button-span">VỀ LAFUONG</button>
+				</div>
+			</div>
+
+			<div class="w-50">
+				<div class="w-img">
+					<img src="image/banner1.webp" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="banner2">
+			<div class="w-35">
+				<h2 class="font-serif">Bánh Sinh Nhật</h2>
+				<p>Bánh cho 5-10 người ăn</p>
+				<img src="image/LF_Banh-sinh-nhat_Illus.webp" alt="">
+				<a href="" class="a">Xem tất cả</a>
+			</div>
+
+			<div class="w-30">
+				<h2 class="font-serif">Bánh Sinh Nhật</h2>
+				<p>Bánh cho 5-10 người ăn</p>
+				<img src="image/LF_Banh-ngot-hang-ngay_Illus.webp" alt="">
+				<a href="" class="a">Xem tất cả</a>
+			</div>
+
+			<div class="w-35">
+				<h2 class="font-serif">Phụ kiện</h2>
+				<p>Nến, thiệp và phụ kiện trang trí</p>
+				<img src="image/LF_Phu-kien_Illus.webp" alt="">
+				<a href="" class="a">Xem tất cả</a>
+			</div>
+		</div>
+
+		<div class="conten">
+			<h1 class="font-serif">Sản phẩm</h1>
+			<p>Sản phẩm đặc trưng của LaFuong Pastry là bánh Entremet – <br>
+				 dòng bánh lạnh cao cấp nhất của Pháp, với sự hài hòa của các <br>
+				tầng hương vị và kết cấu đặc biệt trong từng chiếc bánh</p>
+			<button class="button-span">XEM TẤT CẢ</button>
+		</div>
+
+		<div class="banner3">
+			<div class="owl-carousel owl-theme" id="slider1">
+				<div class="item w-23">
+						<h2 class="font-serif">Heart to Heart</h2>
+						<p class="z-index-1">Sô-cô-la, Dâu rừng & Vani</p>
+						<img src="image/0.webp" alt="" class="img-320">
+						<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+						<h2 class="font-serif">All Yours</h2>
+						<p class="z-index-1">Vani, Anh đào & Dâu tây</p>
+						<img src="image/0 (1).webp" alt="" class="img-320">
+						<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+						<h2 class="font-serif">Roll in Love</h2>
+						<p class="z-index-1">Sô-cô-la, Dâu rừng & Vani</p>
+						<img src="image/0 (2).webp" alt="" class="img-320">
+						<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+					<h2 class="font-serif">Whisper White</h2>
+					<p class="z-index-1">Trà Earlgrey, Cam & Sô-cô-la</p>
+					<img src="image/0 (3).webp" alt="" class="img-320">
+					<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+					<h2 class="font-serif">Orient Scent</h2>
+					<p class="z-index-1">Xoài, Lá dứa & Phô mai</p>
+					<img src="image/0 (4).webp" alt="" class="img-320">
+					<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+					<h2 class="font-serif">Beloved Darling</h2>
+					<p class="z-index-1">Sô-cô-la, Dâu rừng & Vani</p>
+					<img src="image/0 (5).webp" alt="" class="img-320">
+					<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+					<h2 class="font-serif">One Sunny Day</h2>
+					<p class="z-index-1">Dừa, Xoài & Chanh leo</p>
+					<img src="image/0 (6).webp" alt="" class="img-320">
+					<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+					<h2 class="font-serif">Be in Blossom</h2>
+					<p class="z-index-1">Vải, Phúc bồn tử & Dừa</p>
+					<img src="image/0 (7).webp" alt="" class="img-320">
+					<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+					<h2 class="font-serif">The Stellar</h2>
+					<p class="z-index-1">Sô-cô-la, Dâu rừng & Vani</p>
+					<img src="image/0 (8).webp" alt="" class="img-320">
+					<a href="" class="a">Xem thêm</a>
+				</div>
+				<div class="item w-23">
+					<h2 class="font-serif">A Little Grace</h2>
+					<p class="z-index-1">Trà Earlgrey, Cam & Sô-cô-la</p>
+					<img src="image/0 (9).webp" alt="" class="img-320">
+					<a href="" class="a">Xem thêm</a>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="banner1">
+			<div class="w-50">
+				<div class="w-img">
+					<img src="image/LF_Cooking.webp" alt="">
+				</div>
+			</div>
+
+			<div class="w-50">
+				<div class="w-text">
+					<h1 class="font-serif">Sự sáng tạo đến từ những <br> hương vị tự nhiên</h1>
+					<p>Từ vải và dâu rừng, trà Earl Grey và cam hay xoài và lá dứa.., <br>
+						 những chiếc bánh Entremet của LaFuong là sự kết hợp sáng <br>
+						tạo của nhiều tầng hương vị tự nhiên và mới lạ. Dù bạn là ai, <br>
+						chúng tôi mong rằng, bạn sẽ luôn tìm được chiếc bánh phù <br>
+						hợp với khẩu vị của riêng mình tại LaFuong</p>
+					<button class="button-span">XEM SẢN PHẨM</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="banner1">
+			<div class="w-50">
+				<div class="w-text">
+					<h1 class="font-serif">Không chỉ là chiếc bánh, <br> mà là một món quà</h1>
+					<p>Bánh của LaFuong không dành để ăn một mình, vì chúng tôi <br>
+						tin rằng mỗi chiếc bánh được gửi đi đều là món quà mà bạn <br>
+						có thể sẻ chia với những người quan trọng.</p>
+					<p>Từ chiếc hộp, cây nến, tấm bưu thiệp hay cách chúng tôi<br>
+						trao tới bạn tận tay món quà ấy, đều sẽ được LaFuong <br>
+						chuẩn bị thật chu đáo.</p>
+					<button class="button-span">CÁCH ĐẶT BÁNH</button>
+				</div>
+			</div>
+
+			<div class="w-50">
+				<div class="w-img">
+					<img src="image/LF_Packaging_Delivery.webp" alt="">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer1">
+			<div class="info">
+				<h3>MENU</h3>
+				<ul>
+					<li><a href="">Về LaFuong</a></li>
+					<li><a href="">Sản phẩm</a></li>
+					<li><a href="">Cách mua hàng</a></li>
+					<li><a href="">Câu hỏi thường gặp</a></li>
+				</ul>
+			</div>
+
+			<div class="info">
+				<h3>HOTLINE</h3>
+				<ul>
+					<li><a href="">090 786 0330</a></li>
+				</ul>
+				
+				<h3>ĐỊA CHỈ</h3>
+				<p>Ngõ 91 Nguyễn Chí Thanh,
+				<br>Q.Đống Đa, Hà Nội</p>
+			</div>
+
+			<div class="info1">
+				<h3>FOLLOW US ON</h3>
+				<div class="info-icon">
+					<a href=""><i class="fab fa-facebook-square"></i></a>
+					<a href=""><i class="fab fa-instagram-square"></i></a>
+					<a href=""><i class="fab fa-tiktok"></i></a>
+				</div>
+				<p>© 2022 LaFuong Pastry.
+				<br>All rights reserved.</p>
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="footer2-text">
+				<svg style="width:100%;height:auto" width="90" height="16" viewBox="0 0 90 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.36839 15.8261H0C0.145226 15.4006 0.204675 14.952 0.175116 14.5048V2.95218C0.20378 2.65532 0.142951 2.35678 0 2.09277H2.46056C2.31598 2.35626 2.25433 2.65507 2.28322 2.95218V14.9388H7.71641L7.36839 15.8261Z" fill="#ddd"></path>
+					<path d="M9.04172 14.5412L13.5439 3.906C13.8042 3.29507 13.8042 2.60905 13.5439 1.99812L12.6572 0H14.2532L20.3271 14.3951C20.5113 14.9042 20.772 15.3842 21.1007 15.8195H18.1658C18.2008 15.7007 18.2187 15.5778 18.219 15.4543C18.1944 15.0906 18.0925 14.7359 17.9197 14.4122L16.7426 11.6192H11.9767L10.6754 14.6765C10.4936 15.0351 10.3867 15.425 10.3607 15.8238H8.32129C8.62672 15.4339 8.86961 15.0014 9.04172 14.5412ZM14.3619 5.59259L12.4976 10.2849H16.1375L14.3619 5.59259Z" fill="#ddd"></path>
+					<path d="M25.4745 7.95588H30.768L30.4155 8.8604H25.4745V14.8634C25.4469 15.1969 25.5071 15.5318 25.6496 15.8366H23.189C23.3312 15.5439 23.3916 15.2202 23.3641 14.8977V2.86604C23.3903 2.59356 23.3275 2.32001 23.1846 2.08398H31.8298L31.4773 2.98851H25.4922L25.4745 7.95588Z" fill="#ddd"></path>
+					<path d="M34.2308 9.69442V3.18012C34.2586 2.81793 34.1986 2.45446 34.0557 2.11875L36.5982 2.10156C36.4492 2.472 36.3834 2.86901 36.4054 3.26606V9.06705C36.4054 12.2619 37.1968 14.7477 39.746 14.7477C42.7541 14.7477 43.2639 12.0535 43.2639 10.8546V3.07484C43.2836 2.73973 43.2166 2.40515 43.0689 2.10156H45.0639C44.9242 2.44306 44.8578 2.8086 44.8688 3.17582V10.889C44.8688 12.8678 43.6563 15.996 39.4356 15.996C36.0241 16.0003 34.2308 14.0366 34.2308 9.69442Z" fill="#ddd"></path>
+					<path d="M49.1515 14.1044C48.445 13.4313 47.8836 12.6288 47.5 11.7436C47.1164 10.8584 46.9182 9.90805 46.917 8.94791C46.917 4.96886 50.1534 1.92871 54.3209 1.92871C58.4883 1.92871 61.7402 5.02257 61.7402 9.08757C61.7402 13.2385 58.2422 16.0015 54.2677 16.0015C52.3735 16.0332 50.5401 15.3534 49.1515 14.1044ZM59.3018 9.06178C58.8075 5.51458 55.9191 2.73655 52.8733 3.13618C50.0847 3.50142 49.0185 6.28805 49.3886 8.95651C49.8032 11.9172 52.1485 15.256 55.6332 14.8005C58.506 14.4331 59.6809 11.7883 59.3018 9.06178Z" fill="#ddd"></path>
+					<path d="M63.8372 14.5758V2.9889C63.8645 2.68312 63.8038 2.37601 63.6621 2.10156H66.5638L72.9635 12.6637V3.05765C72.9635 2.79768 72.9635 2.36368 72.7884 2.10156H74.5041C74.329 2.39806 74.329 2.70959 74.329 3.17582V14.4835C74.3007 14.9363 74.3601 15.3903 74.5041 15.822H72.7817L65.2205 3.52173V14.5715C65.1923 14.9955 65.2518 15.4207 65.3956 15.822H63.6732C63.8127 15.4213 63.8684 14.9977 63.8372 14.5758Z" fill="#ddd"></path>
+					<path d="M78.6268 14.1053C77.2391 12.8033 76.3945 11.0308 76.3945 8.77269C76.3954 7.52251 76.7542 6.29708 77.4308 5.23273C78.1075 4.16838 79.0755 3.30684 80.2272 2.74396C81.2647 2.22402 82.6368 1.92752 84.4656 1.92752C86.0987 1.88566 87.706 2.32872 89.072 3.19729L87.6466 4.23933C86.4695 3.37992 85.4144 3.00608 83.9713 3.00608C80.7016 3.00608 78.9083 5.68098 78.9083 8.04434C78.9083 12.0556 81.5994 15.0442 84.9223 15.0442C87.139 15.0442 87.8417 14.4534 87.8417 14.4534V8.86723H82.5836L82.9361 7.9627H89.5995C89.4567 8.27353 89.3958 8.61387 89.4222 8.95317V14.7907C88.5355 15.5534 86.5227 16.0067 84.4833 16.0067C81.8809 16.0003 80.0455 15.3923 78.6268 14.1053Z" fill="#ddd"></path>
+				</svg>
+			</div>
+		</div>
+	</footer>
+	<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+	integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+	crossorigin="anonymous"
+	></script>
+	<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+	integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+	crossorigin="anonymous"
+	></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/control.js"></script>
+</body>
+</html>

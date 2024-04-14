@@ -1,0 +1,24 @@
+.container-menu{
+    background-color: rgb(255, 255, 255);
+    width: 0%;
+    height: 100%;
+    border-right: 1px solid #000000;
+    position: absolute;
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+}
+.option-menu ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #444;
+    transition: all 0.3s ease-in-out 0s;
+}
+.option-menu ul li a:hover::before{
+    width: 100%;
+}
